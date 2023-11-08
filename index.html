@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir Funcionário</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>Inserir Funcionário</h1>
+    <form method="POST" action="/inserir_funcionario">
+        <label for="primeiro_nome">Primeiro Nome</label>
+        <input type="text" name="primeiro_nome" required>
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" required>
+
+        <label for="primeiro_nome">Setor</label>
+        <input type="text" name="setor" required>
+
+        <label for="id_setor">ID do Setor</label>
+        <input type="text" name="id_setor" required>
+
+        <label for="primeiro_nome">Cargo</label>
+        <input type="text" name="cargo" required>
+        
+        <label for="id_setor">ID do Cargo</label>
+        <input type="text" name="id_setor" required>
+
+        <label for="data_admissao">Data de Admissão</label>
+        <input type="date" name="data_admissao" required>
+
+        <label for="status_funcionario">Status do Funcionário</label>
+        <select name="status_funcionario" required>
+            <option value="1">Ativo</option>
+            <option value="0">Inativo</option>
+        </select>
+
+        <input type="submit" value="Cadastrar Funcionário">
+    </form>
+</body>
+</html>
