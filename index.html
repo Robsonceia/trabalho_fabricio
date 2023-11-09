@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inserir Funcionário</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Formulário de Funcionário</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilo.css') }}">
+
 </head>
 <body>
-    <h1>Inserir Funcionário</h1>
-    <form method="POST" action="/inserir_funcionario">
-        <label for="primeiro_nome">Primeiro Nome</label>
-        <input type="text" name="primeiro_nome" required>
-
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" name="sobrenome" required>
-
-        <label for="primeiro_nome">Setor</label>
-        <input type="text" name="setor" required>
-
-        <label for="id_setor">ID do Setor</label>
-        <input type="text" name="id_setor" required>
-
-        <label for="primeiro_nome">Cargo</label>
-        <input type="text" name="cargo" required>
+    <h1>Cadastro de Funcionário</h1>
+    <form>
+        <label for="setor">Nome do Setor:</label>
+        <input type="text" id="setor" name="setor" required><br><br>
         
-        <label for="id_setor">ID do Cargo</label>
-        <input type="text" name="id_setor" required>
-
-        <label for="data_admissao">Data de Admissão</label>
-        <input type="date" name="data_admissao" required>
-
-        <label for="status_funcionario">Status do Funcionário</label>
-        <select name="status_funcionario" required>
-            <option value="1">Ativo</option>
-            <option value="0">Inativo</option>
-        </select>
-
-        <input type="submit" value="Cadastrar Funcionário">
+        <label for="cargo">Nome do Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required><br><br>
+        
+        <label for="idSetor">ID do Setor:</label>
+        <input type="text" id="idSetor" name="idSetor" required><br><br>
+        
+        <label for="idCargo">ID do Cargo:</label>
+        <input type="text" id="idCargo" name="idCargo" required><br><br>
+        
+        <label for="firstName">Primeiro Nome:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Sobrenome:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="admissionDate">Data de Admissão:</label>
+        <input type="date" id="admissionDate" name="admissionDate" required><br><br>
+        
+        <label for="status">Status do Funcionário:</label>
+        <select id="status" name="status" required>
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+        </select><br><br>
+        
+        <input type="submit" value="Cadastrar">
     </form>
+    
 </body>
 </html>
